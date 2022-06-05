@@ -9,7 +9,7 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route('/movie/<title>')
 def get_by_title(title):
-    return get_by_title(title)
+    return movie_by_title(title)
 
 
 @app.route('/movie/<int:year1>/to/<int:year2>')
